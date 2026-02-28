@@ -75,6 +75,18 @@ button{
   display:none;
 }
 
+/* ALERTA ROJA */
+.alerta{
+  background:#d40511;
+  color:white;
+  padding:12px;
+  border-radius:8px;
+  text-align:center;
+  font-weight:bold;
+  margin-bottom:15px;
+  font-size:14px;
+}
+
 /* ESTADO */
 .status{
   background:#ffe680;
@@ -146,6 +158,12 @@ Para dudas sobre tu envío, comunícate con atención al cliente.
 <!-- RESULTADO -->
 <div id="resultado" class="container">
 
+  <!-- 🔴 ALERTA AGREGADA -->
+  <div class="alerta">
+    ⚠️ Por problemas no previstos, la entrega se retrasará.  
+    Nueva fecha estimada de llegada: entre el 7 y 10 de marzo.
+  </div>
+
   <div class="status">
     📦 ENVÍO EN TRÁNSITO
   </div>
@@ -186,19 +204,22 @@ Para dudas sobre tu envío, comunícate con atención al cliente.
       <span id="horaActual"></span>
     </div>
 
- <div class="event">
+    <div class="event">
       <b>Llego al despacho</b>
       <span>preparando para saldia</span>
-       <span>25 Feb 2026 - 8:45</span>
+      <span>25 Feb 2026 - 8:45</span>
     </div>
- <div class="event">
+
+    <div class="event">
       <b>se dirge a jungapeo (actual)</b>
       <span>en transito</span>
-       <span>27 Feb 2026 - 11:00</span>
+      <span>27 Feb 2026 - 11:00</span>
     </div>
-
-
-  </div>
+ <div class="event">
+  <b>Reprogramación de ruta por incidencia logística (actual)</b>
+  <span>Entrega reprogramada – nueva fecha estimada: 7 al 10 de marzo de 2026</span>
+  <span>28 Feb 2026 - 06:45</span>
+</div>
 
   <div class="footer">
     Número de guía: <span id="guiaMostrada"></span>
